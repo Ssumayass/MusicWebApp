@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <script src="assets/javaScript/loginRegister.js" defer></script>
+
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+    <header class="header">
+        
+        <a href="/" class="logo">
+            <img src="assets/img/logo.png" class="logo">
+        </a>
+
+        <nav class="navbar">
+            <a href="/">Home</a>
+            <a href="/music.html">Music</a>
+            <a href="/login.html" class="login__profile">Login</a>
+        </nav>
+    </header>
+
+    <div class="wrapper ">
+
+        <div class="form__box login">
+            <form action="" method="POST">
+                <h2>Login</h2>
+                <div class="input__box">
+                <span class="icon">
+                    <i class="ri-account-circle-line"></i>
+                </span>
+                <input type="text" email="login__email" id="login__email" required>
+                <label>email</label>
+                </div>
+                <div class="input__box">
+                <span class="icon">
+                    <i class="ri-lock-line"></i>
+                </span>
+                <input type="password" name="password" id="password" required>
+                <label>Password</label>
+                </div>
+                <div class="remember__forget">
+                <label>
+                    <input type="checkbox"> Remember me
+                </label>
+                <a href="#">Forget Password?</a>
+                </div>
+                <button type="submit" class="btn" id="login-btn">Login</button>
+                <div class="login__register">
+                <p>
+                    Don't have an account?
+                    <a class="registration__link">Register</a>
+                </p>
+                </div>
+            </form>
+
+        </div>
+
+        <div class="form__box register">
+            <form action="" method="POST">
+            <h2>Registration</h2>
+
+            <div class="input__box">
+                <span class="icon">
+                <i class="ri-mail-line"></i>
+                </span>
+                <input type="email" name="email" required>
+                <label>Email</label>
+            </div>
+
+            <div class="input__box">
+                <span class="icon">
+                <i class="ri-lock-line"></i>
+                </span>
+                <input type="password" name="password" required>
+                <label>Password</label>
+            </div>
+            <div class="input__box">
+                <span class="icon">
+                <i class="ri-account-circle-line"></i>
+                </span>
+                <input type="password" name="confirm__password" required>
+                <label>confirm password</label>
+            </div>
+            <div class="remember__forget">
+                <label>
+                <input type="checkbox" required> I agree to the terms & conditions
+                </label>
+            </div>
+            <button type="submit" class="btn">Register</button>
+            <div class="login__register">
+                <p>
+                Already have an account?
+                <a class="login__link">Login</a>
+                </p>
+            </div>
+            </form>
+        </div>
+
+
+    </div>
+
+    
+    
+</body>
+</html>
